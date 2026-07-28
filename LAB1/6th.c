@@ -1,20 +1,29 @@
 #include <stdio.h>
-struct Distance
-{
+struct distance {
     int feet;
-   int inch;
-}dist;
+    float inches;
+};
 
-int main(){
+int main() {
+    struct distance d1, d2, total;
+    printf("Enter the first distance:\n");
+    printf("Feet: ");
+    scanf("%d", &d1.feet);
+    printf("Inches: ");
+    scanf("%f", &d1.inches);
+
     
-    printf("Enter Feet : \n");
-    scanf("%d", &dist.feet);
-    printf("enter Inch : \n");
-    scanf("%d",&dist.inch);
+    printf("\nEnter the second distance:\n");
+    printf("Feet: ");
+    scanf("%d", &d2.feet);
+    printf("Inches: ");
+    scanf("%f", &d2.inches);
 
-    float Totaldistance=(dist.feet*12 + dist.inch); // Convert feet to inches and add the existing inches
+  
+    total.feet = d1.feet + d2.feet;
+    total.inches = d1.inches + d2.inches;
 
+    printf("\nTotal Distance: %d Feet, %.2f Inches\n", total.feet, total.inches);
 
-   
-    printf("Total Distance in Inches = %f", Totaldistance);
+    return 0;
 }
