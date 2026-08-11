@@ -1,57 +1,54 @@
-# OOP Laboratory - Lab 2: Classes, Objects, and Member Functions
+# OOP Laboratory - Lab 3: Dynamic Memory Allocation
 
-**Institution:** International Institute of Information Technology, Bhubaneswar  
-**Department:** Computer Science and Engineering  
-**Semester:** B.Tech 3rd Semester  
-**Section:** CSE B2  
-**Date:** 04.08.2026  
-**Reference Document:** OOP_LAB_2_CSE_B2.pdf
+**Institution:** International Institute of Information Technology, Bhubaneswar[cite: 2]  
+**Department:** Computer Science and Engineering[cite: 2]  
+**Semester:** B.Tech 3rd Semester[cite: 2]  
+**Section:** CSE B2[cite: 2]  
+**Date:** 11.03.2026[cite: 2]  
+**Reference Document:** OOP_LAB_3_CSE_B2.pdf[cite: 2]  
 
 ------------------------------------------------
 
 ## Instructions
-- Write all programs in C++.
-- Use classes and objects in every program.
-- Implement the required functionality using member functions.
-- Display the output in a neat and readable format.
-- Use appropriate data types and meaningful variable names.
+- Write all programs in C++[cite: 2].
+- Use the `new` operator for dynamic memory allocation wherever required[cite: 2].
+- Release all dynamically allocated memory using the appropriate `delete` or `delete []` operator[cite: 2].
+- Display the output in a clear and readable format[cite: 2].
+- Ensure that dynamically allocated memory is properly deallocated before the program terminates[cite: 2].
 
 ------------------------------------------------
 
 ## List of Programs
 
-### 1. Student Information System
-Create a class named `Student` to store Roll Number, Name, and Marks. Include member functions to accept details from the user and display them in a formatted manner.
+### 1. Dynamic Integer Allocation
+Write a C++ program to dynamically allocate memory for a single integer using the `new` operator[cite: 2]. Read an integer from the user, store it in the dynamically allocated memory, display its value, and release the allocated memory using the `delete` operator[cite: 2].
 
-### 2. Rectangle Calculator
-Design a class `Rectangle` with length and breadth. Include functions to read dimensions, calculate the area, calculate the perimeter, and display all results.
+### 2. Dynamic Array of Integers
+Write a C++ program to dynamically allocate an array of $n$ integers using the `new` operator (`new int[n]`)[cite: 2]. Read the elements from the user, display them, and release the allocated memory using `delete[]`[cite: 2].
 
-### 3. Simple Calculator
-Create a class `Calculator` to perform basic arithmetic operations (Addition, Subtraction, Multiplication, Division) on two numbers. Includes a check to ensure the second number is not zero before division.
+### 3. Find the Largest Element
+Write a C++ program that dynamically allocates an array of $n$ integers[cite: 2]. Accept the elements, determine the largest element in the array using pointer access, and properly deallocate the memory after displaying the result[cite: 2].
 
-### 4. Bank Account Management
-Design a class `BankAccount` with Account Number, Account Holder Name, and Balance. Include functions to enter details, deposit money, withdraw money (with sufficient balance check), and display updated details.
+### 4. Dynamic Array and Average
+Write a C++ program that dynamically allocates memory for $n$ floating-point numbers (`new float[n]`)[cite: 2]. Accept the numbers, calculate their sum and average, display the results, and release the memory using `delete[]`[cite: 2].
 
-### 5. Employee Salary Calculator
-Create an `Employee` class with Employee ID, Employee Name, and Basic Salary. Calculate HRA (20% of Basic), DA (10% of Basic), and Gross Salary.
+### 5. Dynamic Object Creation
+Create a class named `Student` with Roll Number, Name, and Marks[cite: 2]. Create an object of the class dynamically using `new`[cite: 2]. Implement member functions to accept and display details using the arrow operator (`->`), and release the object using `delete`[cite: 2].
 
-### 6. Distance Addition
-Create a `Distance` class with Feet and Inches. Write functions to input two distances, add them (converting inches to feet if $\ge$ 12), and display the final distance.
+### 6. Array of Dynamic Objects
+Create an `Employee` class containing Employee ID, Employee Name, and Salary[cite: 2]. Dynamically allocate memory for an array of $n$ `Employee` objects using `new Employee[n]`[cite: 2]. Accept/display details of all employees and properly deallocate memory using `delete[]`[cite: 2].
 
-### 7. Product Inventory Management
-Design a `Product` class with Product ID, Product Name, Quantity Available, and Price per Unit. Include functions to accept/display details, update quantity after sales (checking stock availability), and calculate total inventory value.
+### 7. Dynamic Matrix
+Write a C++ program to dynamically allocate memory for a 2D matrix of size $m \times n$ using a pointer-to-pointer approach (`int **matrix`)[cite: 2]. Allocate memory for rows first and then for each row[cite: 2]. Accept elements, display the matrix, and properly deallocate all memory[cite: 2].
 
-### 8. Library Book Management System
-Create a `LibraryBook` class for book issue/return tracking. Calculates fines based on the rule: no fine for the first 15 days, and ₹2 per day for each additional day.
+### 8. Dynamic Student Marks System
+Create a `Student` class storing Roll Number, Name, Number of Subjects, and a dynamically allocated array of marks[cite: 2]. Member functions should dynamically allocate memory for marks at runtime, accept marks, calculate total & average, display results, and release memory[cite: 2].
 
-### 9. Student Result Processing System
-Create a `StudentResult` class for a student with Roll Number, Name, and marks in 5 subjects (100 marks each). Calculate Total Marks, Percentage, and assign grades from A to F based on specified criteria.
+### 9. Dynamic Shopping Cart
+Create a `Product` class with Product ID, Product Name, Price, and Quantity[cite: 2]. Dynamically allocate memory for an array of $n$ `Product` objects (where $n$ is entered at runtime)[cite: 2]. Implement functions to accept/display products, calculate the total cart cost, display the total amount, and release memory[cite: 2].
 
-### 10. Electricity Bill Generator
-Create an `ElectricityBill` class with Consumer Number, Name, and Units Consumed. Calculate bills based on slab rates: 
-- First 100 units: ₹5 per unit
-- Next 100 units: ₹7 per unit
-- Above 200 units: ₹10 per unit
+### 10. Dynamic Employee Salary Analysis
+Create an `Employee` class with Employee ID, Employee Name, Basic Salary, and a dynamically allocated array for monthly earnings[cite: 2]. Dynamically allocate memory for the number of months entered at runtime, calculate total and average monthly earnings, identify the highest-earning month, display analysis, and deallocate memory[cite: 2].
 
 -----------------------------------------------
 
@@ -60,4 +57,3 @@ To compile and run any of the C++ programs in this repository, use the following
 ```bash
 g++ filename.cpp -o output_executable
 ./output_executable
-```
