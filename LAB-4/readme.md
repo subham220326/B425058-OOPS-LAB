@@ -1,4 +1,4 @@
-# OOP Laboratory - Lab 4: Constructors, Destructors, and Friend Functions
+# OOP Laboratory - Lab 4: Friend Functions
 
 **Institution:** International Institute of Information Technology, Bhubaneswar  
 **Department:** Computer Science and Engineering  
