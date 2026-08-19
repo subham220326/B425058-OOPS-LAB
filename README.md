@@ -12,6 +12,7 @@
 * [Lab 1: Structures in C (Revision)](./LAB1)
 * [Lab 2: Classes, Objects, and Member Functions](./LAB-2)
 * [Lab 3: Dynamic Memory Allocation](./LAB-3)
+* [Lab 4: Friend Functions](./LAB-4)
 
 -----------------------------------
 
