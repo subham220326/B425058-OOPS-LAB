@@ -13,6 +13,7 @@
 * [Lab 2: Classes, Objects, and Member Functions](./LAB-2)
 * [Lab 3: Dynamic Memory Allocation](./LAB-3)
 * [Lab 4: Friend Functions](./LAB-4)
+* [Lab 5: Method Overloading](./LAB-5)
 
 -----------------------------------
 
