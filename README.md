@@ -14,6 +14,7 @@
 * [Lab 3: Dynamic Memory Allocation](./LAB-3)
 * [Lab 4: Friend Functions](./LAB-4)
 * [Lab 5: Method Overloading](./LAB-5)
+* [Lab Test 01](./LAB-TEST-01)
 
 -----------------------------------
 
