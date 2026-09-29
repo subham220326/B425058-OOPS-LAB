@@ -15,6 +15,7 @@
 * [Lab 4: Friend Functions](./LAB-4)
 * [Lab 5: Method Overloading](./LAB-5)
 * [Lab Test 01](./LAB-TEST-01)
+* [Lab 6: Operator Overloading](./LAB-6)
 
 -----------------------------------
 
