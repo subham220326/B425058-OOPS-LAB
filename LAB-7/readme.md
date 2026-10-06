@@ -10,6 +10,7 @@
 ------------------------------------------------
 
 ## Instructions
+
 - Write and execute the C++ program for each problem.
 - Use appropriate classes, objects, constructors, and inheritance concepts wherever required.
 - Follow the inheritance structure specified in each question.
@@ -47,6 +48,7 @@ $$
 Create a base class `Student` containing `name`, `rollNo`, and a function `calculateResult()`.
 
 Derive two classes:
+
 - `RegularStudent`
 - `ScholarshipStudent`
 
@@ -62,7 +64,9 @@ For `ScholarshipStudent`, add **5 bonus marks** to the total.
 
 Create the following inheritance hierarchy:
 
-`Vehicle → Car → LuxuryCar`
+```text
+Vehicle → Car → LuxuryCar
+```
 
 The classes should contain:
 
@@ -79,32 +83,35 @@ $$
 ### 4. Banking System – Hierarchical Inheritance
 
 Create a base class `BankAccount` containing:
+
 - Account number
 - Balance
 
 Derive two classes:
+
 - `SavingsAccount`
 - `CurrentAccount`
 
 For `SavingsAccount`:
+
 - Add interest to the balance.
 
 For `CurrentAccount`:
+
 - Deduct a maintenance charge if the balance is below the specified minimum balance.
 
 Display the updated balance for both account types.
 
-- **Condition:** Both derived classes should inherit from the same base class.
+- **Hint:** Both derived classes should inherit from the same base class.
 
 ### 5. Student Performance – Multiple Inheritance
 
 Create two base classes:
+
 - `Academic`
 - `Sports`
 
-The `Academic` class should store marks in three academic subjects.
-
-The `Sports` class should store sports marks.
+The class `Academic` should store marks in three academic subjects, while the class `Sports` should store sports marks.
 
 Derive a class `StudentResult` from both classes.
 
@@ -122,11 +129,12 @@ $$
 
 - Use constructors in all three classes.
 - Display the complete result.
-- **Condition:** The derived class should inherit data from both `Academic` and `Sports`.
+- **Hint:** The derived class should inherit data from both `Academic` and `Sports`.
 
 ### 6. Resolving Ambiguity in Multiple Inheritance
 
 Create two base classes:
+
 - `InternalExam`
 - `ExternalExam`
 
@@ -136,7 +144,108 @@ Derive a class `FinalResult` from both classes.
 
 - Call the appropriate `display()` function from `FinalResult`.
 - Resolve the ambiguity using the scope resolution operator.
-- **Hint:** Use the form:
+
+**Hint:** Use the following form:
 
 ```cpp
 BaseClassName::functionName();
+```
+
+### 7. University Personnel – Hybrid Inheritance
+
+Create the following inheritance hierarchy:
+
+```text
+        Person
+       /      \
+   Student   Employee
+       \      /
+    TeachingAssistant
+```
+
+The classes should contain:
+
+- `Person`: `name` and `age`
+- `Student`: `rollNo` and `CGPA`
+- `Employee`: `employeeID` and `salary`
+
+The class `TeachingAssistant` should display all the information.
+
+- Use **virtual inheritance** for `Student` and `Employee`.
+- Ensure that only one copy of the `Person` members is inherited.
+
+### 8. Hospital System – Protected Members
+
+Create a base class `Patient` with the following **protected** data members:
+
+- Patient name
+- Patient ID
+- Age
+
+Derive a class `InPatient` containing:
+
+- Room charges
+- Number of days
+
+Calculate and display the total hospital bill.
+
+- **Condition:** The derived class must access the patient information through the inherited protected members.
+- Do not make the members public.
+
+### 9. Constructor Execution in Inheritance
+
+Create the following inheritance hierarchy:
+
+```text
+Person → Employee → Manager
+```
+
+Each class should contain its own data members and a constructor.
+
+Create an object of `Manager`.
+
+Display messages from each constructor so that the order of constructor execution is clearly visible:
+
+```text
+Person constructor
+Employee constructor
+Manager constructor
+```
+
+Finally, display all the initialized information.
+
+**Hint:** Observe which constructor executes first when an object of the most-derived class is created.
+
+### 10. Diamond Problem – Virtual Inheritance
+
+Create the following inheritance hierarchy:
+
+```text
+           Employee
+          /        \
+     Developer    Tester
+          \        /
+           TechLead
+```
+
+The classes should contain:
+
+- `Employee`: employee ID and name
+- `Developer`: programming language
+- `Tester`: testing tool
+
+Use **virtual inheritance** so that `TechLead` contains only one copy of the `Employee` data.
+
+- Display all relevant information of the `TechLead`.
+- **Hint:** Use virtual base classes to solve the diamond inheritance problem.
+
+------------------------------------------------
+
+## How to Run
+
+To compile and run any of the C++ programs in this repository, use the following commands in your terminal using `g++`:
+
+```bash
+g++ filename.cpp -o output_executable
+./output_executable
+```
