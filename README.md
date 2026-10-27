@@ -17,6 +17,7 @@
 * [Lab Test 01](./LAB-TEST-01)
 * [Lab 6: Operator Overloading](./LAB-6)
 * [Lab 7: Inheritance](./LAB-7)
+* [Lab 8: Inheritance](./LAB-8)
 
 -----------------------------------
 
